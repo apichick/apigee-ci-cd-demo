@@ -1,0 +1,7 @@
+github
+nodejs
+workflow-aggregator
+maven
+cucumber-reports
+http_request
+job-dsl
