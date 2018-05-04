@@ -3,6 +3,7 @@ nodejs
 workflow-aggregator
 maven
 cucumber-reports
+junit
 http_request
 job-dsl
 greenballs
