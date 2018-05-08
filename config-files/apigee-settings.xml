@@ -1,0 +1,34 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                        https://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <profiles>
+        <profile>
+            <id>feature</id>
+            <properties>
+                <apigee.org>apigeetraining2018-eval</apigee.org>
+                <apigee.env>test</apigee.env>
+                <deployment.suffix>-jekins</deployment.suffix>
+                <entity.suffix>-jenkins</entity.suffix>                
+            </properties>
+        </profile>
+        <profile>
+            <id>master</id>
+            <properties>
+                <apigee.org>apigeetraining2018-eval</apigee.org>
+                <apigee.env>test</apigee.env>
+                <deployment.suffix></deployment.suffix>
+                <entity.suffix></entity.suffix>                
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <apigee.org>apigeetraining2018-eval</apigee.org>
+                <apigee.env>prod</apigee.env>
+                <deployment.suffix></deployment.suffix>
+                <entity.suffix>-prod</entity.suffix>                
+            </properties>
+        </profile>
+    </profiles>
+</settings>

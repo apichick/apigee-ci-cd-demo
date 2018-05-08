@@ -7,18 +7,11 @@ services:
     ports: 
       - "8080:8080"
     secrets:
-      - apigee-organization
-      - apigee-username
-      - apigee-password
+      - apigee-credentials
       - git-private-key
- 
 secrets:
-  apigee-organization:
-    file: ./secrets/apigee-organization
-  apigee-username:
-    file: ./secrets/apigee-username
-  apigee-password:
-    file: ./secrets/apigee-password
+  apigee-credentials:
+    file: ./secrets/apigee-credentials
   git-private-key:
     file: ./secrets/git-private-key
     

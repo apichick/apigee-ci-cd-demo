@@ -27,3 +27,5 @@ for (v in versions) {
 desc.setInstallations(installations.toArray(new NodeJSInstallation[0]))
 
 desc.save() 
+
+
