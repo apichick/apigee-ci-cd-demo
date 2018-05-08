@@ -18,6 +18,12 @@
           <defaultValue></defaultValue>
           <trim>false</trim>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>INCLUDES</name>
+          <description></description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
@@ -33,8 +39,9 @@
       <scriptText>multibranchPipelineJob(&quot;${JOB_NAME}&quot;) {
     branchSources {
         git {
-          remote(&quot;${REPO_URL}&quot;)
-            credentialsId(&apos;git-credentials&apos;)
+          	remote(&quot;${REPO_URL}&quot;)
+        	credentialsId(&apos;git-credentials&apos;)
+          	includes(&quot;${INCLUDES}&quot;)
         }
     }
     triggers {
