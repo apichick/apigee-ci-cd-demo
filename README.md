@@ -16,7 +16,7 @@ CI/CD demo for building, deploying and testing API proxies
 
         $ mkdir secrets
 
-4. Create three files below containing your Apigee credentials and the private key that you would use to authenticate against your public repo.
+4. Create the file below containing your Apigee credentials and the private key that you would use to authenticate against your public repo.
 
         $ echo "USERNAME=YOUR-APIGEE-USERNAME\nPASSWORD=YOUR-APIGEE-PASSWORD" > secrets/apigee-credentials
         $ echo "GIT-PRIVATE-KEY" > secrets/git-private-key
