@@ -16,7 +16,7 @@ CI/CD demo for building, deploying and testing API proxies
 
         $ mkdir secrets
 
-4. Create the file below containing your Apigee credentials and the private key that you would use to authenticate against your public repo.
+4. Create the files below containing your Apigee credentials and the private key that you would use to authenticate against your public repo.
 
         $ echo "USERNAME=YOUR-APIGEE-USERNAME\nPASSWORD=YOUR-APIGEE-PASSWORD" > secrets/apigee-credentials
         $ echo "GIT-PRIVATE-KEY" > secrets/git-private-key
@@ -27,13 +27,17 @@ CI/CD demo for building, deploying and testing API proxies
 
 6. Run the following command:
 
-        $ docker compose-up
+        $ docker-compose up
 
 7. Load the jenkins home page (http://localhost:8080) in your browser and double-check that everything works properly.
 
 # Configuring the job
 
+<<<<<<< HEAD
 NOTE: e will assume that we have one organization with two environments: test and prod.
+=======
+NOTE: We will assume that we have one organization with two environments: test and prod.
+>>>>>>> origin/master
 
 1. Create a fork for the following repository in github:
 
