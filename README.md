@@ -27,7 +27,7 @@ CI/CD demo for building, deploying and testing API proxies
 
 6. Run the following command:
 
-        $ docker compose-up
+        $ docker-compose up
 
 7. Load the jenkins home page (http://localhost:8080) in your browser and double-check that everything works properly.
 
