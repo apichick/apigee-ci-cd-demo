@@ -16,10 +16,9 @@ CI/CD demo for building, deploying and testing API proxies
 
         $ mkdir secrets
 
-4. Generate an SSH key pair
+4. Generate an SSH key pair. Please do not set any passphrase.
 
-        ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-
+        $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 5. Create the file below containing your Apigee credentials 
 
@@ -43,11 +42,13 @@ CI/CD demo for building, deploying and testing API proxies
 
 NOTE: We will assume that we have one organization with two environments: test and prod.
 
-1. Create a fork for the following repository in github:
+1. Create a fork for the following repository in Github:
 
         git@github.com:apichick/book-api-v1.git
 
 2. Add the public key corresponding to the private key used in step 4 of the previous section as a deploy key to your fork.
+
+![add-public-key](images/add-public-key.png)
 
 3. Clone the fork.
 
