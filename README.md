@@ -33,7 +33,7 @@ CI/CD demo for building, deploying and testing API proxies
 
 # Configuring the job
 
-NOTE: e will assume that we have one organization with two environments: test and prod.
+NOTE: We will assume that we have one organization with two environments: test and prod.
 
 1. Create a fork for the following repository in github:
 
