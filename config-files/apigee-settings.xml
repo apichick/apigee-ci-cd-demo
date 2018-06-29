@@ -6,7 +6,7 @@ xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
         <profile>
             <id>feature</id>
             <properties>
-                <apigee.org>apigeetraining2018-eval</apigee.org>
+                <apigee.org>APIGEE-ORGANIZATION</apigee.org>
                 <apigee.env>test</apigee.env>
                 <deployment.suffix>-jekins</deployment.suffix>
                 <entity.suffix>-jenkins</entity.suffix>                
@@ -15,7 +15,7 @@ xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
         <profile>
             <id>master</id>
             <properties>
-                <apigee.org>apigeetraining2018-eval</apigee.org>
+                <apigee.org>APIGEE-ORGANIZATION</apigee.org>
                 <apigee.env>test</apigee.env>
                 <deployment.suffix></deployment.suffix>
                 <entity.suffix></entity.suffix>                
@@ -24,7 +24,7 @@ xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
         <profile>
             <id>prod</id>
             <properties>
-                <apigee.org>apigeetraining2018-eval</apigee.org>
+                <apigee.org>APIGEE-ORGANIZATION</apigee.org>
                 <apigee.env>prod</apigee.env>
                 <deployment.suffix></deployment.suffix>
                 <entity.suffix>-prod</entity.suffix>                
