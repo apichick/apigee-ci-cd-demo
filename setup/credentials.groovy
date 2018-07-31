@@ -23,6 +23,22 @@ def apigeeCredentials = new UsernamePasswordCredentialsImpl(
 )
 store.addCredentials(domain, apigeeCredentials)
 
+props = new Properties()
+propsFile = new File('/run/secrets/devportal-credentials')
+props.load(propsFile.newDataInputStream())
+
+username = props.getProperty('USERNAME')
+password = props.getProperty('PASSWORD')
+
+def devPortalCredentials = new UsernamePasswordCredentialsImpl(
+  CredentialsScope.GLOBAL,
+  "devportal-credentials", "Devportal credentials",
+  username,
+  password
+)
+
+store.addCredentials(domain, devPortalCredentials)
+
 def privateKey = '/run/secrets/git-private-key'
 
 def gitCredentials = new BasicSSHUserPrivateKey(
@@ -35,3 +51,9 @@ def gitCredentials = new BasicSSHUserPrivateKey(
 )
 
 store.addCredentials(domain, gitCredentials)
+
+def cronkey = new File("/run/secrets/devportal-cronkey").text.trim()
+
+def devPortalCronKey = new StringCredentialsImpl(CredentialsScope.GLOBAL, 'devportal-cronurl', "Devportal CRON url", cronUrl)
+
+store.addCredentials(domain, devPortalCronKey)

@@ -8,10 +8,15 @@ services:
       - "8080:8080"
     secrets:
       - apigee-credentials
+      - devportal-credentials
+      - devportal-cronkey
       - git-private-key
 secrets:
   apigee-credentials:
     file: ./secrets/apigee-credentials
+  devportal-credentials:
+    file: ./secrets/devportal-credentials
+  devportal-cronkey:
+    file: ./secrets/devportal-cronkey
   git-private-key:
     file: ./secrets/git-private-key
-    
